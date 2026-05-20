@@ -66,7 +66,7 @@ const EducationSection = () => {
               {/* Stats cards */}
               <div className="grid sm:grid-cols-2 gap-4 pt-6 border-t border-border/40">
                 {[
-                  { value: "Current", sub: "2nd Year" },
+                  { value: "Current", sub: "3rd Year" },
                   { value: "Focus", sub: "Full Stack Development" },
                 ].map((stat, i) => (
                   <motion.div
