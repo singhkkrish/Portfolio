@@ -244,9 +244,9 @@ export default function Portfolio() {
               <div className="project-copy">
                 <div className="project-meta"><span>{project.year}</span><span>{project.type}</span></div>
                 <h3>{project.title}</h3>
-                <p>{project.description}</p>
-                <strong>{project.impact}</strong>
-                <ul>{project.stack.map((item) => <li key={item}>{item}</li>)}</ul>
+<p>{project.description}</p>
+{project.impact && <strong>{project.impact}</strong>}
+<ul>{project.stack.map((item) => <li key={item}>{item}</li>)}</ul>
                 <div className="project-links">
                   <MagneticLink href={project.live} target="_blank" rel="noreferrer" data-cursor="link" strength={0.3}>
                     Live site <ArrowUpRight />
