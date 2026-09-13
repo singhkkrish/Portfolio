@@ -14,6 +14,12 @@ export const skills = [
 
 export const experience = [
   {
+    period: "Jul 2026 — Aug 2026", role: "Full Stack Developer Intern", company: "QualDigiIn Technologies Pvt. Ltd. · Remote",
+    summary: "Built authentication and AI-powered interfaces across two client-facing SaaS projects.",
+    highlights: ["Built authentication and login system for a SaaS admin panel using Next.js, TypeScript, and Node.js, including a user management dashboard with dynamic filtering.", "Developed the frontend chat interface for an AI-powered chatbot, integrating LLM API calls to handle user queries and render real-time AI-generated responses.", "Collaborated with a backend team on schema design handoff, focusing independently on frontend architecture and application-level logic across two client projects."],
+    tags: ["Next.js", "TypeScript", "Node.js", "LLM APIs", "SaaS"]
+  },
+  {
     period: "Mar 2026 — Jun 2026", role: "Freelance Full Stack Developer", company: "Self-employed · Remote", 
     summary: "Collaborated with a fellow developer to deliver operational platforms for schools and gyms.",
     highlights: ["School Management Portal: 20+ REST APIs for 500+ student records; JWT/RBAC for admins, teachers, and staff.", "Reduced manual record management by 60% and API response time by 30% through focused dashboards and query optimization.", "Gym Management System: 15+ REST APIs managing 300+ member records, attendance, subscriptions, and revenue insights."],
