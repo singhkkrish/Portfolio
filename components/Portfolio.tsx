@@ -6,12 +6,14 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowDownRight, ArrowUpRight, Github, Linkedin, Mail, Menu, X } from "lucide-react";
 
+import SocialRail from "./SocialRail";
 import { education, experience, projects, skills } from "./portfolio-data";
 import CustomCursor from "./CustomCursor";
 import ScrollProgress from "./ScrollProgress";
 import ParticleField from "./ParticleField";
 import TiltCard from "./TiltCard";
 import { MagneticLink, MagneticButton } from "./Magnetic";
+import { LeetCodeIcon, CodeChefIcon } from "./PlatformIcons";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -109,6 +111,7 @@ export default function Portfolio() {
     <main ref={mainRef}>
       <CustomCursor />
       <ScrollProgress />
+      <SocialRail />
       <a className="skip" href="#content">Skip to content</a>
 
       <header className={`nav ${scrolled ? "nav--glass" : ""}`}>
@@ -330,11 +333,13 @@ export default function Portfolio() {
         </MagneticLink>
         <div className="contact-foot">
           <p>Kanpur, India · Open to remote opportunities</p>
-          <div>
-            <MagneticLink href="https://github.com/singhkkrish" target="_blank" rel="noreferrer" data-cursor="link" strength={0.3}><Github /> GitHub</MagneticLink>
-            <MagneticLink href="https://www.linkedin.com/in/krish-singh-6903652ba/" target="_blank" rel="noreferrer" data-cursor="link" strength={0.3}><Linkedin /> LinkedIn</MagneticLink>
-            <MagneticLink href="mailto:krish212004singh@gmail.com" data-cursor="link" strength={0.3}><Mail /> Email</MagneticLink>
-          </div>
+          <div className="social-icons">
+    <MagneticLink href="https://leetcode.com/singhKrish/" target="_blank" rel="noreferrer" data-cursor="link" data-cursor-label="LeetCode" aria-label="LeetCode profile" strength={0.3}><LeetCodeIcon /></MagneticLink>
+    <MagneticLink href="https://www.codechef.com/users/singh_krish" target="_blank" rel="noreferrer" data-cursor="link" data-cursor-label="CodeChef" aria-label="CodeChef profile" strength={0.3}><CodeChefIcon /></MagneticLink>
+    <MagneticLink href="https://github.com/singhkkrish" target="_blank" rel="noreferrer" data-cursor="link" data-cursor-label="GitHub" aria-label="GitHub profile" strength={0.3}><Github /></MagneticLink>
+    <MagneticLink href="https://www.linkedin.com/in/krish-singh-6903652ba/" target="_blank" rel="noreferrer" data-cursor="link" data-cursor-label="LinkedIn" aria-label="LinkedIn profile" strength={0.3}><Linkedin /></MagneticLink>
+    <MagneticLink href="mailto:krish212004singh@gmail.com" data-cursor="link" data-cursor-label="Email" aria-label="Email" strength={0.3}><Mail /></MagneticLink>
+  </div>
         </div>
       </section>
 
